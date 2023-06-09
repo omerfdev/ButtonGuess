@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -115,7 +116,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(472, 455);
+            ClientSize = new Size(472, 453);
             Controls.Add(button9);
             Controls.Add(button8);
             Controls.Add(button7);
@@ -125,8 +126,10 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximumSize = new Size(490, 500);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Button Guess";
             Load += Form1_Load;
             ResumeLayout(false);
         }

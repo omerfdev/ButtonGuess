@@ -60,10 +60,10 @@ namespace ButtonGuess
                     btn.Enabled = false;
                 }
             }
-         
+
 
         }
-   
+
         private void Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
