@@ -9,6 +9,7 @@ namespace ButtonGuess
         int[] numbers = new int[9];
         int count = 0;
         int temp = 0;
+        #region Form 1 Load process
         private void Form1_Load(object sender, EventArgs e)
         {
             Random rnd = new Random();
@@ -50,6 +51,7 @@ namespace ButtonGuess
             button9.Click += Click;
 
         }
+        #endregion
         private void EnabledButton()
         {
             foreach (var item in this.Controls)
